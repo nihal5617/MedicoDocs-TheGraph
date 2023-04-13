@@ -1,0 +1,8 @@
+{
+  "goerli": {
+    "PatientMedicalRecordSystem": {
+      "address": "0x2EFc22bF47b679Ca993aDB55bbDAb00ea149A371",
+      "startBlock": 8818622
+    }
+  }
+}

@@ -1,0 +1,52 @@
+type AddedDoctor @entity(immutable: true) {
+  id: Bytes!
+  doctorAddress: Bytes! # address
+  name: String! # string
+  doctorRegistrationId: String! # string
+  dateOfRegistration: BigInt! # uint256
+  specialization: String! # string
+  hospitalAddress: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AddedHospital @entity(immutable: true) {
+  id: Bytes!
+  hospitalAddress: Bytes! # address
+  name: String! # string
+  hospitalRegistrationId: String! # string
+  dateOfRegistration: BigInt! # uint256
+  email: String! # string
+  phoneNumber: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AddedPatient @entity(immutable: true) {
+  id: Bytes!
+  patientAddress: Bytes! # address
+  name: String! # string
+  chronicHash: [String!]! # string[]
+  dob: BigInt! # uint256
+  bloodGroup: String! # string
+  dateOfRegistration: BigInt! # uint256
+  publicKey: String! # string
+  vaccinationHash: [String!]! # string[]
+  phoneNumber: String! # string
+  accidentHash: [String!]! # string[]
+  acuteHash: [String!]! # string[]
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AddedPublicKey @entity(immutable: true) {
+  id: Bytes!
+  patientAddress: Bytes! # address
+  publicKey: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
